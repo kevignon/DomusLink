@@ -128,6 +128,35 @@ docker ps
 # 🧹 Nettoyer les volumes Docker
 docker system prune -af --volumes
 
+# --- Prerequisites ---
+
+# Windows:
+# Install manually: Git, Docker Desktop, Node.js v20+, Flutter SDK
+
+# macOS:
+brew install git docker node flutter
+
+# Linux:
+sudo apt update
+sudo apt install -y git docker.io docker-compose nodejs npm
+sudo snap install flutter --classic
+
+
+# --- Clone and setup ---
+git clone https://github.com/<your-username>/DomusLink.git
+cd DomusLink
+
+# Run GitHub Action "Generate DomusLink Starter Pack"
+# Then download and unzip DomusLink_StarterPack.zip
+
+cd DomusLink_StarterPack
+docker-compose up      # (Windows/macOS)
+sudo docker-compose up # (Linux)
+
+cd mobile
+flutter run
+
+
 ## 👥 Contributors
 
 [![Kevin](https://github.com/<kevignon>.png?size=64)](https://github.com/<kevignon>)  
