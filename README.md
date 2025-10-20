@@ -58,7 +58,7 @@
 
 ## 💻 Installation locale
 
-Cette section vous guide pour installer et exécuter **DomusLink** en local sur **Windows 11**, **macOS** ou **Linux (Ubuntu/Debian)**.
+Cette section vous guide pour installer et exécuter **DomusLink** en local sur **Windows 11**, **macOS** ou **Linux (Ubuntu/Debian).
 
 ## 💻 Installation locale (Windows, macOS & Linux)
 
@@ -87,18 +87,18 @@ sudo apt install -y git docker.io docker-compose nodejs npm
 sudo snap install flutter --classic
 
 
-# --- 2️⃣ Cloner le dépôt DomusLink ---
+#  2️⃣ Cloner le dépôt DomusLink ---
 git clone https://github.com/<ton-pseudo>/DomusLink.git
 cd DomusLink
 
 
-# --- 3️⃣ Générer le pack Starter ---
+#  3️⃣ Générer le pack Starter ---
 # Depuis GitHub : onglet "Actions"
 # Lancer le workflow : "Generate DomusLink Starter Pack"
 # Puis télécharger l’artefact : DomusLink_StarterPack.zip
 # (Décompressez-le si nécessaire)
 
-# --- 4️⃣ Lancer l’environnement Docker ---
+#  4️⃣ Lancer l’environnement Docker ---
 cd DomusLink_StarterPack
 
 # Sous Windows ou macOS :
@@ -108,12 +108,12 @@ docker-compose up
 sudo docker-compose up
 
 
-# --- 5️⃣ Lancer l’application mobile Flutter ---
+#  5️⃣ Lancer l’application mobile Flutter ---
 cd mobile
 flutter run
 
 
-# --- 6️⃣ Commandes utiles pour les développeurs ---
+#  6️⃣ Commandes utiles pour les développeurs ---
 
 # 🔁 Relancer les conteneurs Docker
 docker-compose down && docker-compose up --build
