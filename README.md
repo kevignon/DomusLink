@@ -63,7 +63,7 @@ Cette section vous guide pour installer et exécuter **DomusLink** en local sur 
 ## 💻 Installation locale (Windows, macOS & Linux)
 
 Cette section décrit toutes les commandes nécessaires pour installer **DomusLink** sur les trois systèmes d’exploitation.  
-👉 Copiez simplement ce bloc complet et exécutez **les lignes correspondant à votre OS**.
+👉 Copiez simplement ce bloc complet et exécutez les lignes correspondant à votre OS.
 
 # === Installation unifiée DomusLink (Windows, macOS & Linux) ===
 # ---------------------------------------------------------------
