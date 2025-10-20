@@ -1,0 +1,32 @@
+name: Generate DomusLink Starter Pack
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Setup Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.24.0'
+
+      - name: Run PowerShell build script
+        shell: pwsh
+        run: |
+          ./scripts/build_pack.ps1
+
+      - name: Upload DomusLink_StarterPack.zip
+        uses: actions/upload-artifact@v4
+        with:
+          name: DomusLink_StarterPack
+          path: DomusLink_StarterPack.zip
